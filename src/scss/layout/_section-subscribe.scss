@@ -1,0 +1,100 @@
+@import "../variables";
+
+.section-subscribe {
+  padding: 102px 0 84px;
+  background-color: $color-background-gray;
+
+  @media only screen and (max-width: $bp-md) {
+    padding: 64px 0;
+  }
+}
+
+.subscribe {
+  &__subheading {
+    font-size: 23px;
+    font-weight: 700;
+    line-height: 33px;
+    letter-spacing: 0.02em;
+    margin: 12px 0 34px;
+  }
+
+  &__form {
+    max-width: 60%;
+    margin: 0 auto;
+    margin-bottom: 160px;
+    padding-right: 30px;
+    background-color: $color-white;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    box-shadow: 0px 163px 80px rgba(0, 0, 0, 0.04),
+      0px 105.648px 46.8519px rgba(0, 0, 0, 0.0303704),
+      0px 62.7852px 25.4815px rgba(0, 0, 0, 0.0242963),
+      0px 32.6px 13px rgba(0, 0, 0, 0.02),
+      0px 13.2815px 6.51852px rgba(0, 0, 0, 0.0157037),
+      0px 3.01852px 3.14815px rgba(0, 0, 0, 0.00962963);
+
+    .btn {
+      margin-left: auto;
+      @media only screen and (max-width: $bp-sm) {
+        align-self: stretch;
+        margin-left: 0;
+      }
+    }
+
+    @media only screen and (max-width: $bp-md) {
+      max-width: 100%;
+    }
+
+    @media only screen and (max-width: $bp-sm) {
+      flex-direction: column;
+      padding-right: 0;
+      align-items: stretch;
+      box-shadow: none;
+      padding: 30px 12px;
+    }
+  }
+
+  &__hl {
+    height: 1px;
+    background-color: $color-light-gray;
+    width: 75%;
+    margin: 0 auto;
+
+    @media only screen and (max-width: $bp-sm) {
+      width: 100%;
+    }
+  }
+
+  &__form-field {
+    flex: 1;
+    background-color: $color-white;
+    display: flex;
+    flex-direction: column;
+    padding: 30px 20px;
+    position: relative;
+  }
+
+  &__form-label {
+    padding-left: 15px;
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 25px;
+    letter-spacing: 0.02em;
+    color: rgba($color-black, 0.65);
+  }
+
+  &__form-input {
+    width: 100%;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 29px;
+    letter-spacing: 0.02em;
+    padding: 12px 15px;
+    background-color: transparent;
+
+    &:focus {
+      outline: none;
+    }
+  }
+}

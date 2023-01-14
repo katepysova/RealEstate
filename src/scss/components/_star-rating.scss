@@ -1,0 +1,27 @@
+.simple-stars {
+  color: $color-light-gray;
+  display: inline-flex;
+  flex-direction: row-reverse;
+  justify-content: flex-start;
+}
+
+.simple-star {
+  display: none;
+}
+
+.simple-star-label {
+  transition: all 0.3s ease-in;
+}
+
+.simple-star-label::before {
+  content: "★";
+}
+
+.simple-star:enabled + .simple-star-label:hover,
+.simple-star:enabled + .simple-star-label:hover ~ .simple-star-label {
+  color: lighten($color-yellow, 20%);
+}
+
+.simple-star:checked ~ .simple-star-label {
+  color: $color-yellow;
+}

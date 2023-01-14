@@ -1,0 +1,201 @@
+@import "../variables";
+
+.section-hero {
+  padding: calc(#{$header-height-desktop} + 84px) 0 0 0;
+  margin-bottom: 92px;
+  position: relative;
+  background-color: $color-white;
+  background-image: linear-gradient(
+    to right,
+    $color-white 63%,
+    $color-purple 63%
+  );
+
+  @media only screen and (max-width: $bp-md) {
+    background-image: unset;
+  }
+
+  @media only screen and (max-width: $bp-md) {
+    padding: calc(#{$header-height-mobile} + 64px) 0 0 0;
+    margin-bottom: 64px;
+  }
+}
+
+.hero {
+  &__container {
+    position: relative;
+    display: grid;
+    grid-template-columns: 0.485fr 0.515fr;
+    grid-template-rows: auto 1fr;
+
+    @media only screen and (max-width: $bp-lg) {
+      grid-template-columns: 0.6fr 0.4fr;
+    }
+
+    @media only screen and (max-width: $bp-lg) {
+      grid-row-gap: 32px;
+    }
+
+    @media only screen and (max-width: $bp-md) {
+      display: block;
+    }
+  }
+
+  &__content {
+    &-wrapper {
+      padding-top: 40px;
+
+      @media only screen and (max-width: $bp-lg) {
+        padding-top: 0;
+      }
+    }
+
+    .paragraph {
+      margin-bottom: 48px;
+
+      @media only screen and (max-width: $bp-extra-lg) {
+        margin-bottom: 24px;
+      }
+    }
+
+    .heading-primary,
+    .paragraph {
+      padding-right: 68px;
+
+      @media only screen and (max-width: $bp-extra-lg) {
+        padding-right: 34px;
+      }
+
+      @media only screen and (max-width: $bp-md) {
+        padding-right: 0;
+      }
+    }
+
+    @media only screen and (max-width: $bp-md) {
+      margin-bottom: 48px;
+    }
+  }
+
+  &__sub-heading {
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 33px;
+    letter-spacing: 0em;
+    color: $color-orange;
+    text-transform: uppercase;
+  }
+
+  &__swiper {
+    @media only screen and (max-width: $bp-md) {
+      width: 85%;
+    }
+
+    img {
+      filter: drop-shadow(0px 100px 80px rgba(0, 0, 0, 0.03))
+        drop-shadow(0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0227778))
+        drop-shadow(0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0182222))
+        drop-shadow(0px 20px 13px rgba(0, 0, 0, 0.015))
+        drop-shadow(0px 8.14815px 6.51852px rgba(0, 0, 0, 0.0117778))
+        drop-shadow(0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00722222));
+    }
+  }
+
+  &__footer {
+    grid-column: 1 / span 2;
+    display: grid;
+    grid-template-columns: 0.66fr 0.34fr;
+
+    .swiper-controls {
+      color: $color-white;
+      justify-self: end;
+      display: flex;
+      gap: 40px;
+      padding: 30px 0;
+
+      @media only screen and (max-width: $bp-md) {
+        order: -1;
+        justify-self: center;
+
+        .swiper-button-disabled {
+          .swiper-button__icon {
+            color: rgba($color-black, 0.45) !important;
+          }
+        }
+
+        .swiper-button__icon {
+          color: $color-black;
+        }
+      }
+    }
+
+    @media only screen and (max-width: $bp-lg) {
+      grid-template-columns: 0.65fr 0.35fr;
+    }
+
+    @media only screen and (max-width: $bp-md) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &__partners {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 30px;
+
+    @media only screen and (max-width: $bp-md) {
+      grid-template-columns: 1fr;
+
+      .paragraph {
+        text-align: center;
+      }
+    }
+  }
+
+  &__partners-gallery {
+    padding: 0 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    @media only screen and (max-width: $bp-sm) {
+      gap: 12px;
+    }
+
+    @media only screen and (max-width: $bp-extra-sm) {
+      justify-content: flex-start;
+    }
+  }
+
+  &__form {
+    position: relative;
+    z-index: 50;
+    display: grid;
+    grid-template-columns: 100% 188px;
+
+    .input__field {
+      border-right: none;
+
+      @media only screen and (max-width: $bp-sm) {
+        border-right: 1px solid $color-light-gray;
+      }
+    }
+
+    .search__btn {
+      @media only screen and (max-width: $bp-sm) {
+        border: none;
+        padding: 15px 20px;
+      }
+    }
+
+    @media only screen and (max-width: $bp-md) {
+      grid-template-columns: 1fr 188px;
+    }
+
+    @media only screen and (max-width: $bp-sm) {
+      grid-template-columns: 1fr;
+      gap: 16px;
+    }
+  }
+}

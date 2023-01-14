@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>RealEstate</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div
+          class="header__container container container--large container--padded"
+        >
+          <a href="#">
+            <img src="./images/logo.svg" alt="logo" />
+          </a>
+          <nav class="nav">
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a href="#hero" class="nav__link nav__link--active">Home</a>
+              </li>
+              <li class="nav__item">
+                <a href="#how" class="nav__link">About</a>
+              </li>
+              <li class="nav__item">
+                <a href="#property" class="nav__link">Service</a>
+              </li>
+              <li class="nav__item">
+                <a href="#listing" class="nav__link">Portfolio</a>
+              </li>
+              <li class="nav__item">
+                <a href="#feedback" class="nav__link">Blog</a>
+              </li>
+              <li class="nav__item">
+                <a href="#subscribe" class="nav__link">Contact</a>
+              </li>
+            </ul>
+          </nav>
+          <button class="menu-btn" type="button">
+            <span class="menu-btn__icon"></span>
+          </button>
+        </div>
+      </header>
+      <main class="main">
+        <section id="hero" class="section-hero">
+          <div
+            class="hero__container container container--large container--padded"
+          >
+            <div class="hero__content">
+              <div class="hero__content-wrapper">
+                <h3 class="hero__sub-heading u-margin-bottom-md">
+                  Residental & Office Spaces
+                </h3>
+                <h1 class="heading-primary u-margin-bottom-md">
+                  Smart Living Style for Smart People
+                </h1>
+                <p class="paragraph">
+                  Much did had call new drew that kept. Limits expect wonder law
+                  she. Now has you views woman noisy match money rooms.
+                </p>
+
+                <form class="hero__form">
+                  <div class="input">
+                    <input
+                      class="input__field input__field-with-icon"
+                      type="search"
+                      placeholder="Enter Zipcode to search properties"
+                    />
+                    <svg class="input__icon">
+                      <use href="./icons/sprite.svg#house-outline"></use>
+                    </svg>
+                  </div>
+                  <button class="search__btn" type="submit">Search Now!</button>
+                </form>
+              </div>
+            </div>
+
+            <div class="hero__swiper swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="swiper-image">
+                    <img src="./images/hero-image.png" alt="hero image" />
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="swiper-image">
+                    <img src="./images/hero-image-2.png" alt="hero image" />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="hero__footer">
+              <div class="hero__partners">
+                <p class="paragraph">Our Amazing Partners</p>
+                <div class="hero__partners-gallery">
+                  <img src="./images/buzz.svg" alt="buzz" />
+                  <img src="./images/chase.svg" alt="chase" />
+                  <img src="./images/microsoft.svg" alt="microsoft" />
+                  <img src="./images/gucc.svg" alt="gucc" />
+                  <img src="./images/airbnb.svg" alt="airbnb" />
+                  <img src="./images/uber.svg" alt="uber" />
+                </div>
+              </div>
+
+              <div class="swiper-controls">
+                <button class="swiper-button-prev-unique">
+                  <svg class="swiper-button__icon">
+                    <use href="./icons/sprite.svg#chevron-thin-left"></use>
+                  </svg>
+                </button>
+                <button class="swiper-button-next-unique">
+                  <svg class="swiper-button__icon">
+                    <use href="./icons/sprite.svg#chevron-thin-right"></use>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="how" class="section-how">
+          <div
+            class="how__container container container--large container--padded"
+          >
+            <h2 class="heading-secondary u-center">How it works?</h2>
+            <div class="how__items">
+              <div class="how__item how__item--1">
+                <div class="how__item-logo">
+                  <svg class="how__item-logo-icon">
+                    <use href="./icons/sprite.svg#magnifier-outline"></use>
+                  </svg>
+                </div>
+                <h4 class="how__item-title">Research Suburbs</h4>
+                <p class="paragraph u-center">
+                  Wonder twenty hunted and put income set desire expect. Am
+                  cottage calling.
+                </p>
+              </div>
+
+              <div class="separator">
+                <hr class="separator__line separator__line--1"></hr>
+              </div>
+
+              <div class="how__item how__item--2">
+                <div class="how__item-logo">
+                  <svg class="how__item-logo-icon">
+                    <use href="./icons/sprite.svg#hand"></use>
+                  </svg>
+                </div>
+                <h4 class="how__item-title">Instant Valuation</h4>
+                <p class="paragraph u-center">
+                  Conveying or northward offending admitting perfectly my.
+                  Colonel gravit and moonlight.
+                </p>
+              </div>
+
+              <div class="separator">
+                <hr class="separator__line separator__line--2"></hr>
+              </div>
+
+              <div class="how__item how__item--3">
+                <div class="how__item-logo">
+                  <svg class="how__item-logo-icon">
+                    <use href="./icons/sprite.svg#building"></use>
+                  </svg>
+                </div>
+                <h4 class="how__item-title">Track Property</h4>
+                <p class="paragraph u-center">
+                  Moderate children at of outweigh it. Unsatiable it considered
+                  invitation he travelling insensible.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="property" class="section-property">
+          <div class="property__container container container--large container--padded">
+            <div class="property__header">
+              <h2 class="heading-secondary">Best Real Estate Deals</h2>
+              <a class="btn" href="#">View All Property</a>
+            </div>
+            <p class="paragraph">Colonel gravity get thought fat smiling add but. Wonder twenty hunted and put income set desire expect.</p>
+            <div class="property__tabs tabs">
+              <nav class="tabs__nav">
+                <ul class="tabs__list">
+                  <li class="tabs__tab">
+                    <button class="tabs__link tabs__link--active" type="button" data-for="residental">
+                      Residential Property
+                    </button>
+                  </li>
+                  <li class="tabs__tab">
+                    <button class="tabs__link" type="button" data-for="commercial">
+                      Commercial Property
+                    </button>
+                  </li>
+                  <li class="tabs__tab">
+                    <button class="tabs__link" type="button" data-for="agriculture">
+                      Agriculture Property
+                    </button>
+                  </li>
+                  <li class="tabs__tab">
+                    <button class="tabs__link" type="button" data-for="industrial">
+                      Industrial Property
+                    </button>
+                  </li>
+                </ul>
+              </nav> 
+            </div>
+
+
+            <div class="tabs__content" data-goal="residental">
+              <div class="property__items" >
+
+                <a href="#" class="property__item">
+                  <div class="property__item-tags">
+                    <span class="property__item-tag">Featured</span>
+                    <span class="property__item-tag">3D</span>
+                  </div>
+                  <img class="property__item-image" src="./images/prop-1.jpg" alt="house"/>
+                </a>
+
+                <a href="#" class="property__item">
+                  <div class="property__item-tags">
+                    <span class="property__item-tag">Featured</span>
+                    <span class="property__item-tag">3D</span>
+                  </div>
+                  <img class="property__item-image" src="./images/prop-2.jpg" alt="house"/>
+                </a>
+
+                <a href="#" class="property__item">
+                  <div class="property__item-tags">
+                    <span class="property__item-tag">Featured</span>
+                  </div>
+                  <img class="property__item-image" src="./images/prop-3.jpg" alt="house"/>
+                </a>
+
+                <a href="#" class="property__item">
+                  <div class="property__item-tags">
+                    <span class="property__item-tag">Featured</span>
+                  </div>
+                  <img class="property__item-image" src="./images/prop-9.jpeg" alt="house"/>
+                </a>
+
+              </div>
+            </div>
+
+            <div class="tabs__content" data-goal="commercial">
+              <div class="property__items" >
+
+                <a href="#" class="property__item">
+                  <div class="property__item-tags">
+                    <span class="property__item-tag">New Building</span>
+                    <span class="property__item-tag">3D</span>
+                  </div>
+                  <img class="property__item-image" src="./images/prop-4.jpg" alt="house"/>
+                </a>
+
+                
+
+              </div>
+            </div>
+
+            <div class="tabs__content" data-goal="agriculture">
+              <div class="property__items" >
+
+                <a href="#" class="property__item">
+                  <div class="property__item-tags">
+                    <span class="property__item-tag">Eco-friendly</span>
+                  </div>
+                  <img class="property__item-image" src="./images/prop-5.jpeg" alt="house"/>
+                </a>
+
+                <a href="#" class="property__item">
+                  <div class="property__item-tags">
+                    <span class="property__item-tag">Featured</span>
+                    <span class="property__item-tag">Eco-friendly</span>
+                  </div>
+                  <img class="property__item-image" src="./images/prop-6.jpeg" alt="house"/>
+                </a>
+
+                
+
+              </div>
+            </div>
+
+            <div class="tabs__content" data-goal="industrial">
+              <div class="property__items" >
+
+                <a href="#" class="property__item">
+                  <div class="property__item-tags">
+                    <span class="property__item-tag">Featured</span>
+                    <span class="property__item-tag">3D</span>
+                  </div>
+                  <img class="property__item-image" src="./images/prop-7.jpeg" alt="house"/>
+                </a>
+
+                <a href="#" class="property__item">
+                  <div class="property__item-tags">
+                    <span class="property__item-tag">Featured</span>
+                    <span class="property__item-tag">3D</span>
+                  </div>
+                  <img class="property__item-image" src="./images/prop-8.jpeg" alt="house"/>
+                </a>
+
+              </div>
+            </div>
+
+          </div>
+        </section>
+        <section id="listing" class="section-listing">  
+              <div class="listing__container container container--large container--padded">
+                <h2 class="heading-secondary u-center">Featured Listing of the Week</h2>
+                <div class="listing__wrapper">
+                  <div class="listing__images">
+                    <div class="listing__image listing__image--1">
+                      <img src="./images/tower.jpg" alt="tower">
+                    </div>
+                    <div class="listing__image listing__image--2">
+                      <img src="./images/office.jpg" alt="office">
+                    </div>
+                  </div>
+                  <div class="listing__content">
+                    <h3 class="heading-tertiary">The and collecting for the motionless difficulty son.</h3>
+                    <p class="paragraph">
+                      Conveying or northward offending admitting perfectly my. Colonel gravity get thought fat smiling add but difficult situations.
+                    </p>
+                    <div class="listing__table">
+                      <div class="listing__cell">
+                        <div class="listing__title">Budget</div>
+                        <div class="listing__value">Confidential</div>
+                      </div>
+                      <div class="listing__cell">
+                        <div class="listing__title">Size</div>
+                        <div class="listing__value">1200 m<sup>2</sup></div>
+                      </div>
+                      <div class="listing__cell">
+                        <div class="listing__title">Type</div>
+                        <div class="listing__value">Office</div>
+                      </div>
+                      <div class="listing__cell">
+                        <div class="listing__title">Status</div>
+                        <div class="listing__value">Done</div>
+                      </div>
+                       <div class="listing__cell">
+                        <div class="listing__title">Location</div>
+                        <div class="listing__value">Switzerland</div>
+                      </div>
+                      <div class="listing__cell">
+                        <div class="listing__title">Flat</div>
+                        <div class="listing__value">8 Room</div>
+                      </div>
+                    </div>
+
+                    <a href="#" class="btn">Yes! I want book “Offcie Package”</a>
+                  </div>
+                </div>
+              </div>
+        </section>
+        <section id="feedback" class="section-feedback">
+          <div class="feedback__container container container--large container--padded">
+            <h2 class="heading-secondary">
+              Loved by businesses, and individuals across the globe.
+            </h2>
+            <div class="feedback__items">
+
+              <div class="feedback__item">
+                <div class="feedback__rating">
+                  <div class="simple-stars">
+                    <input
+                      class="simple-star"
+                      id="simple-star-5"
+                      type="radio"
+                      value="5"
+                      name="simple-rating-1"
+                      disabled
+                    />
+                    <label class="simple-star-label" for="simple-star-5"></label>
+
+                    <input
+                      class="simple-star"
+                      id="simple-star-4"
+                      type="radio"
+                      value="4"
+                      name="simple-rating-1"
+                      disabled
+                    />
+                    <label class="simple-star-label" for="simple-star-4"></label>
+
+                    <input
+                      class="simple-star"
+                      id="simple-star-3"
+                      type="radio"
+                      value="3"
+                      name="simple-rating-1"
+                      disabled
+                    />
+                    <label class="simple-star-label" for="simple-star-3"></label>
+
+                    <input
+                      class="simple-star"
+                      id="simple-star-2"
+                      type="radio"
+                      value="2"
+                      name="simple-rating-1"
+                      checked
+                      disabled
+                    />
+                    <label class="simple-star-label" for="simple-star-2"></label>
+
+                    <input
+                      class="simple-star"
+                      id="simple-star-1"
+                      type="radio"
+                      value="1"
+                      name="simple-rating-1"
+                      disabled
+                    />
+                    <label class="simple-star-label" for="simple-star-1"></label>
+                  </div>
+                </div>
+                <p class="paragraph">Moderate children at of outweigh it. Unsatiable it considered invitation he travelling insensible.</p>
+                <div class="feedback__user">
+                  <img src="./images/user-1.png" alt="user">
+                  <div>
+                    <div class="feedback__user-name">Jane Cooper</div>
+                    <div class="feedback__user-address">Los Angeles, CA</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="feedback__item">
+                <div class="feedback__rating">
+                  <div class="simple-stars">
+                    <input
+                      class="simple-star"
+                      id="simple-star-5"
+                      type="radio"
+                      value="5"
+                      name="simple-rating-2"
+                      checked
+                      disabled
+                    />
+                    <label class="simple-star-label" for="simple-star-5"></label>
+
+                    <input
+                      class="simple-star"
+                      id="simple-star-4"
+                      type="radio"
+                      value="4"
+                      name="simple-rating-2"
+                      disabled
+                    />
+                    <label class="simple-star-label" for="simple-star-4"></label>
+
+                    <input
+                      class="simple-star"
+                      id="simple-star-3"
+                      type="radio"
+                      value="3"
+                      name="simple-rating-2"
+                      disabled
+                    />
+                    <label class="simple-star-label" for="simple-star-3"></label>
+
+                    <input
+                      class="simple-star"
+                      id="simple-star-2"
+                      type="radio"
+                      value="2"
+                      name="simple-rating-2"
+                      disabled
+                    />
+                    <label class="simple-star-label" for="simple-star-2"></label>
+
+                    <input
+                      class="simple-star"
+                      id="simple-star-1"
+                      type="radio"
+                      value="1"
+                      name="simple-rating-2"
+                      disabled
+                    />
+                    <label class="simple-star-label" for="simple-star-1"></label>
+                  </div>
+                </div>
+                <p class="paragraph">The and collecting motionless difficulty son. His hearing staying ten colonel met. Sex drew six easy four dear cold.</p>
+                <div class="feedback__user">
+                  <img class="feedbacl__user-photo" src="./images/user-2.png" alt="user">
+                  <div>
+                    <div class="feedback__user-name">Robert Fox</div>
+                    <div class="feedback__user-address">New York City, NY</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="feedback__item">
+                <div class="feedback__rating">
+                  <div class="simple-stars">
+                    <input
+                      class="simple-star"
+                      id="simple-star-5"
+                      type="radio"
+                      value="5"
+                      name="simple-rating-3"
+                      disabled
+                    />
+                    <label class="simple-star-label" for="simple-star-5"></label>
+
+                    <input
+                      class="simple-star"
+                      id="simple-star-4"
+                      type="radio"
+                      value="4"
+                      name="simple-rating-3"
+                      disabled
+                    />
+                    <label class="simple-star-label" for="simple-star-4"></label>
+
+                    <input
+                      class="simple-star"
+                      id="simple-star-3"
+                      type="radio"
+                      value="3"
+                      name="simple-rating-3"
+                      checked
+                      disabled
+                    />
+                    <label class="simple-star-label" for="simple-star-3"></label>
+
+                    <input
+                      class="simple-star"
+                      id="simple-star-2"
+                      type="radio"
+                      value="2"
+                      name="simple-rating-3"
+                      disabled
+                    />
+                    <label class="simple-star-label" for="simple-star-2"></label>
+
+                    <input
+                      class="simple-star"
+                      id="simple-star-1"
+                      type="radio"
+                      value="1"
+                      name="simple-rating-3"
+                      disabled
+                    />
+                    <label class="simple-star-label" for="simple-star-1"></label>
+                  </div>
+                </div>
+                <p class="paragraph">Sociable on as carriage my position weddings raillery ociable on as carriage my position weddings raillery c consider. Peculiar trifling absolute and wandered vicinity property yet.</p>
+                <div class="feedback__user">
+                  <img src="./images/user-3.png" alt="user">
+                  <div>
+                    <div class="feedback__user-name">Leslie Alexander</div>
+                    <div class="feedback__user-address">Buffalo, NJ</div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="feedback__partners">
+              <div class="feedback__partners-images">
+                <img src="./images/airbnb.svg" alt="airbnb">
+                <img src="./images/buzz.svg" alt="buzz">
+                <img src="./images/chase.svg" alt="chase">
+                <img src="./images/uber.svg" alt="uber">
+                <img src="./images/microsoft.svg" alt="microsoft">
+              </div>
+              <div class="feedback__partners-contact">
+                Give us a Call 1-888-111-2222 and we can set you up, or <a href="#">check our pricing plans.</a>
+              </div>
+            </div>
+
+          </div>
+        </section>
+        <section id="subscribe" class="section-subscribe">
+          <div class="subscribe__container container container--padded container--large">
+            <h2 class="heading-secondary u-center">
+              Get Our Newsletter
+            </h2>
+            <h4 class="subscribe__subheading u-center">To join the worldwide community</h4>
+            <form action="#" class="subscribe__form">
+              <div class="subscribe__form-field">
+                <label for="subscribe__form-input" class="subscribe__form-label">Email Address</label>
+                <input id="subscribe__form-input" class="subscribe__form-input" type="email" placeholder="Type your Email Address..." /> 
+              </div>
+              <button class="btn">Send Now</button>
+            </form>
+            <div class="subscribe__hl"></div>
+          </div>
+        </section>
+      </main>
+      <footer class="footer">
+        <div class="footer__container container container--large container--padded">
+
+
+          <div class="footer__nav">
+            <a href="#">
+              <img src="./images/logo.svg" alt="logo" />
+            </a>
+              <nav class="footer__nav-nav">
+                <ul class="nav__list">
+                  <li class="nav__item">
+                    <a href="#" class="nav__link nav__link--active">Home</a>
+                  </li>
+                  <li class="nav__item">
+                    <a href="#" class="nav__link">About</a>
+                  </li>
+                  <li class="nav__item">
+                    <a href="#" class="nav__link">Service</a>
+                  </li>
+                  <li class="nav__item">
+                    <a href="#" class="nav__link">Portfolio</a>
+                </li>
+                <li class="nav__item">
+                  <a href="#" class="nav__link">Blog</a>
+                </li>
+                <li class="nav__item">
+                  <a href="#" class="nav__link">Contact</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <p class="copyright">Copyright &copy; <span class="copyright__year">2022</span> AR Shakir. All Rights Reseved.</p>
+          
+        </div>
+      </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>

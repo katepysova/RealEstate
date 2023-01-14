@@ -1,0 +1,60 @@
+@import "../variables";
+
+.tabs {
+  &__list {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 50px;
+    overflow-x: auto;
+    padding-bottom: 10px;
+
+    /* Horizontal scrolling shadows */
+
+    background-image: linear-gradient(to right, $color-white, $color-white),
+      linear-gradient(to right, rgba($color-black, 0.2), rgba($color-black, 0)),
+      linear-gradient(to left, $color-white, $color-white),
+      linear-gradient(to left, rgba($color-black, 0.2), rgba($color-black, 0));
+
+    background-size: 20px 100%, 15px 80%, 20px 100%, 15px 80%;
+    background-position: left center, left center, right center, right center;
+    background-attachment: local, scroll, local, scroll;
+    background-repeat: no-repeat;
+
+    @media only screen and (max-width: $bp-md) {
+      gap: 32px;
+    }
+  }
+
+  &__link {
+    cursor: pointer;
+    color: inherit;
+    padding: 0 4px 12px;
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0em;
+    white-space: nowrap;
+
+    background-color: transparent;
+    border-bottom: 2px solid transparent;
+
+    transition: all 0.3s;
+
+    &:hover,
+    &:active {
+      color: darken($color-red, 20%);
+    }
+  }
+
+  &__link.active {
+    color: $color-red;
+    border-bottom: 2px solid currentColor;
+
+    &:hover,
+    &:active {
+      color: darken($color-red, 20%);
+    }
+  }
+}

@@ -1,0 +1,74 @@
+@import "../variables";
+
+.nav {
+  transition: all 0.4s;
+  &__list {
+    display: flex;
+    align-items: center;
+    gap: 46px;
+    list-style: none;
+
+    @media only screen and (max-width: $bp-md) {
+      gap: 24px;
+    }
+
+    @media only screen and (max-width: $bp-sm) {
+      flex-direction: column;
+      height: 100%;
+      justify-content: center;
+      gap: 24px;
+    }
+  }
+
+  &__link {
+    &:link,
+    &:visited {
+      display: block;
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 17px;
+      letter-spacing: 0em;
+      text-decoration: none;
+      color: $color-black;
+      padding: 2px 0;
+      border-bottom: 1px solid transparent;
+      transition: all 0.2s ease-in-out;
+
+      @media only screen and (max-width: $bp-sm) {
+        font-size: 24px;
+        line-height: 36px;
+      }
+    }
+
+    &:hover,
+    &:active {
+      border-bottom: 1px solid $color-black;
+    }
+  }
+
+  @media only screen and (max-width: $bp-sm) {
+    position: fixed;
+    top: 0;
+    left: 0;
+    visibility: hidden;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    transform: translateX(-100%);
+  }
+}
+
+.nav__link.nav__link--active {
+  border-bottom: 1px solid $color-black;
+}
+
+@media only screen and (max-width: $bp-sm) {
+  .header.nav--open {
+    .nav {
+      background-color: $color-white;
+      visibility: visible;
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+}

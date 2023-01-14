@@ -1,0 +1,33 @@
+@import "../variables";
+
+.btn {
+  &,
+  &:link,
+  &:visited {
+    display: inline-block;
+    cursor: pointer;
+    text-align: center;
+    padding: 22px 34px;
+    color: $color-white;
+    background-color: $color-red;
+    box-shadow: 0px 100px 80px rgba(248, 90, 71, 0.07),
+      0px 64.8148px 46.8519px rgba(248, 90, 71, 0.0531481),
+      0px 38.5185px 25.4815px rgba(248, 90, 71, 0.0425185),
+      0px 20px 13px rgba(248, 90, 71, 0.035),
+      0px 8.14815px 6.51852px rgba(248, 90, 71, 0.0274815),
+      0px 1.85185px 3.14815px rgba(248, 90, 71, 0.0168519);
+    border-radius: 5px;
+    transition: all 0.2s ease-in;
+    text-decoration: none;
+  }
+
+  &:hover,
+  &:active {
+    background-color: darken($color-red, 20%);
+    transform: translateY(-3px);
+  }
+
+  &:active {
+    transform: translateY(-1px);
+  }
+}
